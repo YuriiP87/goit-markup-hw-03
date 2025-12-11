@@ -5,7 +5,6 @@ body {
     background-color: #ffffff;
 }
 
-/* Обнулення маржинів заголовків і параграфів */
 h1,
 h2,
 h3,
@@ -13,7 +12,6 @@ p {
     margin: 0;
 }
 
-/* Обнулення списків */
 ul,
 ol {
     list-style-type: none;
@@ -21,26 +19,22 @@ ol {
     padding: 0;
 }
 
-/* Посилання без підкреслення */
 a {
     text-decoration: none;
 }
 
-/* Зображення як блокові елементи */
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-/* Контейнер */
 .container {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
-/* Прихований заголовок */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -81,6 +75,10 @@ img {
     color: #4d5ae5;
 }
 
+.header-logo {
+    margin-right: 76px;
+}
+
 .header-logo .logo-part {
     color: #2e2f42;
 }
@@ -92,7 +90,6 @@ img {
 .nav-list {
     display: flex;
     gap: 40px;
-    margin-left: 76px;
 }
 
 .nav-link {
@@ -149,6 +146,8 @@ img {
 }
 
 .hero-button {
+    display: block;
+    margin: 0 auto;
     border: none;
     font-family: inherit;
     font-weight: 500;
@@ -162,7 +161,6 @@ img {
     height: 56px;
     border-radius: 4px;
     padding: 16px 32px;
-    display: inline-block;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -237,7 +235,7 @@ img {
 }
 
 .team-card-content {
-    padding: 32px 16px;
+    padding: 32px 0;
     text-align: center;
 }
 
@@ -261,6 +259,10 @@ img {
 
 .portfolio-section {
     padding: 120px 0;
+}
+
+.portfolio-section .container {
+    border: 1px solid #e7e9fc;
 }
 
 .portfolio-title-main {
